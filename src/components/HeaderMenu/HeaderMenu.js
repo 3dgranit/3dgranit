@@ -22,7 +22,7 @@ export const HeaderMenu = () => {
 
   let scrollSpy = Scroll.scrollSpy;
   const classes = useStyles();
-  
+
   const handleClick = e => {
     handleOpenMenu();
   }
@@ -43,7 +43,7 @@ export const HeaderMenu = () => {
       }
     </>
   )
-  
+
   const handleScroll = e => {
     if (window.pageYOffset > 200) {
       setSmallHeader(true)
@@ -90,7 +90,7 @@ export const HeaderMenu = () => {
                 <img src={logoImg} alt={'logo'} className={`${classes.logo} ${smallHeader ? classes.logoOpen : classes.logoClose }`}/>
               </Box>
             </Hidden>
-              
+
               <Grid container>
                 <Grid item>
                   <List className={classes.ul}>
@@ -98,10 +98,10 @@ export const HeaderMenu = () => {
                   </List>
                 </Grid>
               </Grid>
-            
+
             </Box>
             <Grid item>
-              <a className={classes.linkPhone} href="mailto:3dgranit.portal@gmail.com">3dgranit.portal@gmail.com</a>
+              <a className={classes.linkPhone} href="tel:+375295219358">+375 29 521 9358</a>
             </Grid>
           </Grid>
         <Hidden mdUp>
